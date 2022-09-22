@@ -1,4 +1,5 @@
-mvn clean test -> runs only *Test.java
-mvn clean integration-test -> runs *Test.java and *IT.java
+mvn clean test-compile test -> runs only *Test.java
+mvn clean test-compile failsafe:integration-test -> run only *IT.java
+mvn clean test-compile integration-test -> runs *Test.java and *IT.java
 mvn clean package -> runs only *Test.java
 mvn clean package -DskipTests -> skip all tests
